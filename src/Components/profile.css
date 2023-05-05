@@ -3,6 +3,9 @@
     font-size: 1em;
   }
 
+  body{
+    overflow-x: hidden;
+  }
   .profile{
     background: #dde5f4;
     padding-bottom: 2rem;
@@ -61,6 +64,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .merge .detail{
+    border: none;
   }
   /* profile page */
 
@@ -73,11 +81,10 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 1rem;
   }
   .nav h2{
-    left: 2rem;
+    margin: 0px auto;
   }
 
   .nav ul{
