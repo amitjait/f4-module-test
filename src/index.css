@@ -1,33 +1,3 @@
-body{
-    margin:0 auto;
-    overflow-x: hidden;
-}
-
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-input{
-    margin-bottom: 1rem;
-}
-
-button{
-    color: white;
-}
-
-.error{
-    color: red;
-    width: 50%;
-    font-size: larger;
-    /* border:1px solid black; */
-    margin: 5rem;
-    margin-top: -10rem;
-    text-align: center;
-}
-
 
 /* loader */
 
@@ -123,4 +93,8 @@ button{
       transform: rotate(360deg);
     }
   }
+
+  /* sing in page */
+
+
   

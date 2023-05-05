@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
-import Details from "./Components/Details";
-import Bank from "./Components/Bank";
-import Bio from "./Components/Bio";
-import Company from "./Components/Company";
-import Account from "./Components/Account";
-import Additonal from "./Components/Additonal";
+import Details from "./Details";
+import Bank from "./Bank";
+import Bio from "./Bio";
+import Company from "./Company";
+import Account from "./Account";
+import Additonal from "./Additonal";
 import { useSelector, useDispatch } from "react-redux";
-import { addUser } from "./redux/action";
+import { addUser } from "../redux/action";
+import NavBar from "./NavBar";
+
+import "./profile.css"
 
 
 export default function Profile(){
@@ -27,15 +30,20 @@ export default function Profile(){
     
 
     return (
-        <div className="container-fluid">
+        <div className="profile">
+            <NavBar/>
             { 
                 user.address ? 
-                <div className="container ">
+                <div className="contain">
                     <Details user ={user} />
-                    <Account user={user} />
-                    <Company user={user} />
+                    <div className="merge">
+                        <Account user={user} />
+                        <Company user={user} />
+                    </div>
+                    <div className="merge">
                     <Bank user={user}/>
                     <Bio user={user} />
+                    </div>
                     <Additonal user={user} />
                 </div> 
                 :

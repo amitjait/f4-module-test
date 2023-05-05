@@ -5,9 +5,9 @@ export default function Bio({user}){
     return(
         <>
             {
-            <div className="card p-2 m-2">
-                    <h2>Bio</h2>
-                    <div className="card p-2">
+            <div className="detail">
+                    <h1>Bio</h1>
+                    <div className="inner-detail">
                         <h3>DOB : {user.birthDate}</h3>
                         <h3>Gender : {user.gender}</h3>
                         <h3>Blood Group : {user.bloodGroup}</h3>

@@ -2,17 +2,16 @@ import React from "react";
 
 export default function Details({user}){
     return (
-        <>
-        {
-            <div className="card d-flex flex-row p-2 align-items-center">
-            
-                <div className="image me-2">
-                    
+        <div className="border-1">
+                <div className="img-container">
                     <img src={user.image} alt="user details" />
                 </div>
-                <div className="card p-2">
+            <div className="">
+                
+
+                <div className="detail">
                     <h1>Details</h1>
-                    <div className="card p-2 ">
+                    <div className="inner-detail">
                         
                         <h4>ID : {user.id}</h4>
                         <h3>Name : {user.firstName} {user.maidenName} {user.lastName}</h3>
@@ -31,7 +30,6 @@ export default function Details({user}){
                 </div>
                
             </div>
-        }
-        </>
+        </div>
     )
 }

@@ -2,7 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addUser } from "./redux/action";
+import { addUser } from "../redux/action";
+import "./signing.css"
+
 
 
 let error = false;
@@ -56,17 +58,17 @@ export default function SignIn(){
 
 
     return (
-        <div className="main">
+        <div className="sign">
             {
                 console.log("user", user)
             }
-            <div className="card w-50 d-flex p-2">
+            <div className="screen-1">
                 <h1>Signin</h1>
-                    <input className="input-group mt-2 mb-2 p-2" type="text" name="user-name" placeholder="user name" onChange={(e) => setUserName(e.target.value)}/>
+                    <input className="email" type="text" name="user-name" placeholder="user name" onChange={(e) => setUserName(e.target.value)}/>
                     <div className="under-line"></div>
-                    <input className="input-group mt-2 mb-3 p-2"  type="password" name="password" placeholder="password" onChange={(e) => setPass(e.target.value)}/>  
+                    <input className="password"  type="password" name="password" placeholder="password" onChange={(e) => setPass(e.target.value)}/>  
                     <div className="under-line"></div>  
-                    <button className="btn rounded w-50 border bg-primary mt-2" onClick={() => postReuqest()}>Login</button>
+                    <button className="login" onClick={() => postReuqest()}>Login</button>
             </div>
         </div>
         

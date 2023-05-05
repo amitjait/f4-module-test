@@ -5,9 +5,9 @@ export default function Additonal({user}){
     return (
         <>
         {
-            <div className="card p-2 m-2">
+            <div className="detail">
                 <h1>Additonal Details</h1>
-                <div className="card p-2">
+                <div className="inner-detail">
                     <h3>EIN : {user.domain}</h3>
                     <h3>Domain : {user.domain}</h3>
                     <h3>IP : {user.ip}</h3>
